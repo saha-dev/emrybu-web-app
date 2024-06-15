@@ -1,8 +1,11 @@
 .header {
-    margin: 20px 20px;
+    margin: 0 20px;
     position: sticky;
-    top: 20px;
-    background-color: var(--tg-theme-bg-color);
+    top: 0px;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    /* background-color: var(--tg-theme-bg-color); */
     /* color: var(--tg-theme-text-color);
     background: var(--tg-theme-bg-color); */
 }
