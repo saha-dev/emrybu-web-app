@@ -2,11 +2,17 @@ import './App.css';
 import MenuList from './components/MenuList';
 import Header from './components/header/Header';
 
-let tg = window.Telegram.WebApp;
-tg.expand();
+let tg;
+try {
+    tg = window.Telegram.WebApp;
+} catch {}
 
-tg.MainButton.textColor = '#FFFFFF';
-tg.MainButton.color = '#2cab37';
+if (tg !== undefined) {
+    tg.expand();
+
+    tg.MainButton.textColor = '#FFFFFF';
+    tg.MainButton.color = '#2cab37';
+}
 
 function App() {
     return (
