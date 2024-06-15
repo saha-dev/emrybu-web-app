@@ -1,7 +1,9 @@
 .header {
     margin: 20px 20px;
     position: sticky;
-    top: 0px;
+    top: 20px;
+    /* color: var(--tg-theme-text-color);
+    background: var(--tg-theme-bg-color); */
 }
 
 .headerLogo {

@@ -1,0 +1,36 @@
+.menuItem {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e8e8e8;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    color: black;
+}
+
+.itemContent {
+    margin-right: 10px;
+}
+
+.itemTitle {
+    margin-top: 0;
+}
+
+.itemPrice {
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.itemImageWrapper {
+    text-align: right;
+}
+
+.itemImage {
+    height: 125px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.itemButtons {
+    text-align: center;
+}
