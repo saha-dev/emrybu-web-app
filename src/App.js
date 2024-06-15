@@ -3,6 +3,7 @@ import MenuList from './components/MenuList';
 import Header from './components/header/Header';
 
 let tg;
+
 try {
     tg = window.Telegram.WebApp;
 } catch {}

@@ -4,10 +4,7 @@
     top: 0px;
     padding-top: 20px;
     padding-bottom: 10px;
-    /* background-color: white; */
-    /* background-color: var(--tg-theme-bg-color); */
-    /* color: var(--tg-theme-text-color);*/
-    background: var(--tg-theme-bg-color, white);
+    color: var(--main-color);
 }
 
 .headerLogo {
