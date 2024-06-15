@@ -10,6 +10,10 @@
 .buttons {
     font-size: 2rem;
     margin-right: 10px;
+    cursor: pointer;
+}
+
+.buttons:hover {
 }
 
 .logo {
