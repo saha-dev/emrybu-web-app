@@ -1,8 +1,8 @@
 import style from './Button.module.css';
 function Button(props) {
-    const { children, btnClass } = props;
+    const { children, btnclass } = props;
     return (
-        <button {...props} className={style[btnClass]}>
+        <button {...props} className={style[btnclass]}>
             {children}
         </button>
     );

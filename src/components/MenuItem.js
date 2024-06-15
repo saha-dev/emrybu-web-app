@@ -17,7 +17,7 @@ function MenuItem({ item }) {
             <div className={style.itemImageWrapper}>
                 <img src={imgUrl} alt="" className={style.itemImage} />
                 <div className={style.itemButtons}>
-                    <Button btnClass="itemButtonBuy">Беру!</Button>
+                    <Button btnclass="itemButtonBuy">Беру!</Button>
                 </div>
             </div>
         </div>

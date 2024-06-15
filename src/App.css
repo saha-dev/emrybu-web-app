@@ -2,6 +2,11 @@
     --main-color: #76eee2;
 }
 
+body {
+    color: var(--tg-theme-text-color);
+    background: var(--tg-theme-bg-color);
+}
+
 .App {
     text-align: center;
     color: var(--main-color);
