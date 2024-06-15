@@ -7,7 +7,7 @@
     /* background-color: white; */
     /* background-color: var(--tg-theme-bg-color); */
     /* color: var(--tg-theme-text-color);*/
-    background: var(--tg-theme-bg-color);
+    background: var(--tg-theme-bg-color, white);
 }
 
 .headerLogo {
