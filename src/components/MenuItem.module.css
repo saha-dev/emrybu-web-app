@@ -33,3 +33,13 @@
 .itemButtons {
     text-align: center;
 }
+
+.iconBag {
+    font-size: 1.3rem;
+    margin-right: 5px;
+}
+
+.itemAmоunt {
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
