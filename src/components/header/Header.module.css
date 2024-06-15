@@ -4,7 +4,6 @@
     top: 0px;
     padding-top: 20px;
     padding-bottom: 10px;
-    color: var(--main-color);
 }
 
 .headerLogo {
@@ -16,6 +15,7 @@
 }
 
 .buttons {
+    color: var(--main-color);
     font-size: 2rem;
     cursor: pointer;
 }
