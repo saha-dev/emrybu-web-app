@@ -1,0 +1,7 @@
+.headMenu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: auto;
+}

@@ -1,6 +1,11 @@
 .header {
-    height: 24px;
     margin: 10px 20px;
+    position: sticky;
+    top: 0px;
+}
+
+.headerLogo {
+    height: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,17 +14,18 @@
 
 .buttons {
     font-size: 2rem;
-    margin-right: 10px;
     cursor: pointer;
 }
 
 .buttons:hover {
+    filter: contrast(50%);
 }
 
 .logo {
+    margin-left: 10px;
     width: 100%;
     height: 24px;
-    background-image: url('../../public/logo-new-mobile.png');
+    background-image: url('../../../public/logo-new-mobile.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
