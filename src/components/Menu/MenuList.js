@@ -29,14 +29,15 @@ function MenuList() {
                 return e.id === id ? { ...e, wishlist: !e.wishlist } : { ...e };
             })
         );
+        if (dataModal.active) setDataModal({ ...dataModal, wishlist: !dataModal.wishlist });
     };
     return (
         <>
-            <ModalAppearance dataModal={dataModal} showModalWindow={showModalWindow} />
+            <ModalAppearance dataModal={dataModal} showModalWindow={showModalWindow} changeWishlist={changeWishlist} />
             <div className={style.menuList}>
                 {menu.map((item) => (
                     <MenuItem
-                        item={item}
+                        item={{ ...item }}
                         changeAmount={changeAmount}
                         key={item.id}
                         showModalWindow={showModalWindow}

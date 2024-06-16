@@ -14,7 +14,8 @@ function MenuItem({ item, changeAmount, showModalWindow, changeWishlist }) {
             <div className={style.itemContent}>
                 <h3 className={style.itemTitle}>{title}</h3>
                 <div className={style.itemPrice}>
-                    <span>{`${price.toFixed(2)} ₴`}</span>
+                    {price}
+                    <span className={style.itemCurrency}> ₴</span>
                 </div>
                 <div className={style.itemDescription}>{description}</div>
             </div>
