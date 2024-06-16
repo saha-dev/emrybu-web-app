@@ -2,10 +2,11 @@ import { IoBagAddOutline } from 'react-icons/io5';
 import { TiPlus } from 'react-icons/ti';
 import { TiMinus } from 'react-icons/ti';
 import style from './MenuItem.module.css';
-import Button from './UI/Button';
+import Button from '../UI/Button';
 
-function MenuItem({ item, changeAmount }) {
+function MenuItem({ item, changeAmount, showModalWindow }) {
     const { title, price, description, imgUrl, amount, id } = item;
+
     return (
         <div className={style.menuItem}>
             <div className={style.itemContent}>
@@ -15,8 +16,8 @@ function MenuItem({ item, changeAmount }) {
                 </div>
                 <div className={style.itemDescription}>{description}</div>
             </div>
-            <div className={style.itemImageWrapper}>
-                <img src={imgUrl} alt="" className={style.itemImage} />
+            <div className={style.itemAppearance}>
+                <img src={imgUrl} alt="" className={style.itemImage} onClick={showModalWindow} />
                 <div className={style.itemButtons}>
                     {!amount ? (
                         <Button btnclass="itemButtonBuy" onClick={changeAmount} id={id}>

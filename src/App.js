@@ -1,5 +1,5 @@
 import './App.css';
-import MenuList from './components/MenuList';
+import MenuList from './components/Menu/MenuList';
 import Header from './components/header/Header';
 
 const tg = window.Telegram.WebApp;
