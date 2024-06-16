@@ -6,7 +6,7 @@ const menu = [
         description: 'Вага: 240г (8 шматочків)',
         imgUrl: 'https://emrybu.com.ua/image/cache/catalog/litnemenju/rol_sonjachnij%282%29-560x560.jpg',
         categoryId: 1,
-        favorites: false,
+        wishlist: false,
         rating: 0,
     },
     {
@@ -16,7 +16,7 @@ const menu = [
         description: 'Вага: 950г (24 шматочка)',
         imgUrl: 'https://emrybu.com.ua/image/cache/catalog/litnemenju/setodnogorazuvlitku%283%29-560x560.jpg',
         categoryId: 2,
-        favorites: false,
+        wishlist: false,
         rating: 0,
     },
     {
@@ -26,7 +26,7 @@ const menu = [
         description: 'Вага: 230г (8 шматочків)',
         imgUrl: 'https://emrybu.com.ua/image/cache/catalog/litnemenju/rol_babl_gam%282%29-560x560.jpg',
         categoryId: 3,
-        favorites: false,
+        wishlist: false,
         rating: 0,
     },
     {
@@ -36,7 +36,8 @@ const menu = [
         description: 'Вага: 340г (8 шматочків)',
         imgUrl: 'https://emrybu.com.ua/image/cache/catalog/litnemenju/rollitnjafiladelfizkumkvatom%283%29-560x560.jpg',
         categoryId: 4,
-        favorites: false,
+        wishlist: false,
+        rating: 0,
     },
     {
         id: 5,
@@ -45,7 +46,7 @@ const menu = [
         description: 'Вага: 750г (24 шматочка)',
         imgUrl: 'https://emrybu.com.ua/image/cache/catalog/litnemenju/rolkvitkovijbezrisu%281%29-560x560.jpg',
         categoryId: 5,
-        favorites: false,
+        wishlist: false,
         rating: 0,
     },
 ];

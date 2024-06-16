@@ -6,7 +6,7 @@ import { FaHeart } from 'react-icons/fa';
 import style from './MenuItem.module.css';
 import Button from '../UI/Button';
 
-function MenuItem({ item, changeAmount, showModalWindow, clickWishList, isWishlist }) {
+function MenuItem({ item, changeAmount, showModalWindow, changeWishlist }) {
     const { title, price, description, imgUrl, amount, id } = item;
 
     return (
@@ -21,7 +21,9 @@ function MenuItem({ item, changeAmount, showModalWindow, clickWishList, isWishli
             <div className={style.itemAppearance}>
                 <div className={style.imageWrapper}>
                     <img src={imgUrl} alt="" className={style.itemImage} onClick={() => showModalWindow({ ...item })} />
-                    <button className={style.buttonWishlist}>{isWishlist ? <FaHeart /> : <FaRegHeart />}</button>
+                    <button className={style.buttonWishlist} onClick={() => changeWishlist(item.id)}>
+                        {item.wishlist ? <FaHeart /> : <FaRegHeart />}
+                    </button>
                 </div>
                 <div className={style.itemButtons}>
                     {!amount ? (
