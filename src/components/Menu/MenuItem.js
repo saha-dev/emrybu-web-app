@@ -17,7 +17,7 @@ function MenuItem({ item, changeAmount, showModalWindow }) {
                 <div className={style.itemDescription}>{description}</div>
             </div>
             <div className={style.itemAppearance}>
-                <img src={imgUrl} alt="" className={style.itemImage} onClick={showModalWindow} />
+                <img src={imgUrl} alt="" className={style.itemImage} onClick={() => showModalWindow({ ...item })} />
                 <div className={style.itemButtons}>
                     {!amount ? (
                         <Button btnclass="itemButtonBuy" onClick={changeAmount} id={id}>

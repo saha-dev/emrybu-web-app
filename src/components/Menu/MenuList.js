@@ -1,13 +1,13 @@
 import MenuItem from './MenuItem';
 import style from './MenuList.module.css';
-import Modal from '../Modal/Modal';
+import ModalAppearance from '../Modal/ModalAppearance';
 import fetchData from '../../data/fetchData';
 import { useState } from 'react';
 
 function MenuList() {
     const menuData = fetchData();
     const [menu, setMenu] = useState(menuData);
-    const [showModal, setShowModal] = useState(false);
+    const [dataModal, setDataModal] = useState({ active: false });
 
     const changeAmount = (id, action = '+') => {
         const newMenu = menu.map((obj) => {
@@ -16,19 +16,16 @@ function MenuList() {
             }
             return obj;
         });
-        console.log(action, newMenu);
         setMenu(newMenu);
     };
 
-    const showModalWindow = () => {
-        setShowModal(!showModal);
+    const showModalWindow = (item) => {
+        setDataModal({ ...item, active: !dataModal.active });
     };
 
     return (
         <>
-            <Modal active={showModal} showModalWindow={showModalWindow}>
-                <img src="https://emrybu.com.ua/image/cache/catalog/banners/new/img_6968-560x560.jpg" alt="" onClick={() => showModalWindow()} />
-            </Modal>
+            <ModalAppearance dataModal={dataModal} showModalWindow={showModalWindow} />
             <div className={style.menuList}>
                 {menu.map((item) => (
                     <MenuItem item={item} changeAmount={changeAmount} key={item.id} showModalWindow={showModalWindow} />
