@@ -24,7 +24,7 @@ function MenuItem({ item, changeAmount }) {
                             Беру!
                         </Button>
                     ) : (
-                        <div className={style.itemButtonsPlusMinus}>
+                        <>
                             <Button btnclass="itemMinus" onClick={changeAmount} action="-" id={id}>
                                 <TiMinus />
                             </Button>
@@ -32,7 +32,7 @@ function MenuItem({ item, changeAmount }) {
                             <Button btnclass="itemPlus" onClick={changeAmount} id={id}>
                                 <TiPlus />
                             </Button>
-                        </div>
+                        </>
                     )}
                 </div>
             </div>
