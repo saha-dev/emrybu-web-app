@@ -24,6 +24,25 @@
     text-align: right;
 }
 
+.imageWrapper {
+    position: relative;
+}
+
+.buttonWishlist {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border: none;
+    background-color: unset;
+    font-size: 1.4rem;
+    color: red;
+    top: 5px;
+    right: 5px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
 .itemImage {
     height: 125px;
     margin-bottom: 10px;

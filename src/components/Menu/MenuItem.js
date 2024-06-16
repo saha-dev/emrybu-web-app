@@ -1,10 +1,12 @@
 import { IoBagAddOutline } from 'react-icons/io5';
 import { TiPlus } from 'react-icons/ti';
 import { TiMinus } from 'react-icons/ti';
+import { FaRegHeart } from 'react-icons/fa';
+import { FaHeart } from 'react-icons/fa';
 import style from './MenuItem.module.css';
 import Button from '../UI/Button';
 
-function MenuItem({ item, changeAmount, showModalWindow }) {
+function MenuItem({ item, changeAmount, showModalWindow, clickWishList, isWishlist }) {
     const { title, price, description, imgUrl, amount, id } = item;
 
     return (
@@ -17,7 +19,10 @@ function MenuItem({ item, changeAmount, showModalWindow }) {
                 <div className={style.itemDescription}>{description}</div>
             </div>
             <div className={style.itemAppearance}>
-                <img src={imgUrl} alt="" className={style.itemImage} onClick={() => showModalWindow({ ...item })} />
+                <div className={style.imageWrapper}>
+                    <img src={imgUrl} alt="" className={style.itemImage} onClick={() => showModalWindow({ ...item })} />
+                    <button className={style.buttonWishlist}>{isWishlist ? <FaHeart /> : <FaRegHeart />}</button>
+                </div>
                 <div className={style.itemButtons}>
                     {!amount ? (
                         <Button btnclass="itemButtonBuy" onClick={changeAmount} id={id}>

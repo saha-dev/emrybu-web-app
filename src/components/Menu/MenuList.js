@@ -8,6 +8,7 @@ function MenuList() {
     const menuData = fetchData();
     const [menu, setMenu] = useState(menuData);
     const [dataModal, setDataModal] = useState({ active: false });
+    const [isWishlist, setWishlist] = useState(false);
 
     const changeAmount = (id, action = '+') => {
         const newMenu = menu.map((obj) => {
@@ -23,12 +24,22 @@ function MenuList() {
         setDataModal({ ...item, active: !dataModal.active });
     };
 
+    const clickWishList = (par) => {
+        setWishlist(par);
+    };
     return (
         <>
             <ModalAppearance dataModal={dataModal} showModalWindow={showModalWindow} />
             <div className={style.menuList}>
                 {menu.map((item) => (
-                    <MenuItem item={item} changeAmount={changeAmount} key={item.id} showModalWindow={showModalWindow} />
+                    <MenuItem
+                        item={item}
+                        changeAmount={changeAmount}
+                        key={item.id}
+                        showModalWindow={showModalWindow}
+                        clickWishList={clickWishList}
+                        isWishlist={isWishlist}
+                    />
                 ))}
             </div>
         </>
