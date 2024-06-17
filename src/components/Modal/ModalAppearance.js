@@ -3,6 +3,7 @@ import { FaHeart } from 'react-icons/fa';
 
 import Modal from './Modal';
 import style from './ModalAppearance.module.css';
+import ItemPrice from '../Menu/ItemPrice';
 
 function ModalAppearance({ dataModal, showModalWindow, changeWishlist }) {
     return (
@@ -15,7 +16,11 @@ function ModalAppearance({ dataModal, showModalWindow, changeWishlist }) {
                     {dataModal.wishlist ? <FaHeart /> : <FaRegHeart />}
                 </button>
             </div>
-            <h3 className={style.footer}>{dataModal.price} ₴</h3>
+            <ItemPrice price={dataModal.price} />
+            <div className={style.description}>
+                <p>{dataModal.composition}</p>
+                <p>{dataModal.description}</p>
+            </div>
         </Modal>
     );
 }

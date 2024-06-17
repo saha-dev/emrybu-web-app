@@ -5,6 +5,7 @@ import { FaRegHeart } from 'react-icons/fa';
 import { FaHeart } from 'react-icons/fa';
 import style from './MenuItem.module.css';
 import Button from '../UI/Button';
+import ItemPrice from './ItemPrice';
 
 function MenuItem({ item, changeAmount, showModalWindow, changeWishlist }) {
     const { title, price, description, imgUrl, amount, id } = item;
@@ -13,10 +14,7 @@ function MenuItem({ item, changeAmount, showModalWindow, changeWishlist }) {
         <div className={style.menuItem}>
             <div className={style.itemContent}>
                 <h3 className={style.itemTitle}>{title}</h3>
-                <div className={style.itemPrice}>
-                    {price}
-                    <span className={style.itemCurrency}> ₴</span>
-                </div>
+                <ItemPrice price={price} />
                 <div className={style.itemDescription}>{description}</div>
             </div>
             <div className={style.itemAppearance}>
