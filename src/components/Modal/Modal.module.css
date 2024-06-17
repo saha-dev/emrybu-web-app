@@ -22,7 +22,7 @@
 .modalContent {
     padding: 10px;
     border-radius: 10px;
-    background-color: white;
+    background-color: var(--tg-theme-bg-color, white);
     width: 90vw;
     transform: scale(0.5);
     transition: 0.3s all;
