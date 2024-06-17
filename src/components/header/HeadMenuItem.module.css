@@ -13,4 +13,5 @@
 
 .headMenuItem.active {
     background-color: var(--main-active-color);
+    /* border: 2px solid green; */
 }

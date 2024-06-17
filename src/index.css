@@ -1,6 +1,7 @@
 :root {
     --main-color: #76eee2;
-    --main-active-color: rgb(111, 221, 210);
+    /* --main-active-color: rgb(111, 221, 210); */
+    --main-active-color: #66ccc2;
 }
 
 body {
