@@ -8,10 +8,15 @@
 
 .itemContent {
     margin-right: 10px;
+    position: relative;
 }
 
 .itemTitle {
     margin-top: 0;
+}
+
+.itemDescription {
+    text-align: left;
 }
 
 .itemAppearance {

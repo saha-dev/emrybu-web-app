@@ -32,6 +32,18 @@ function MenuList() {
         );
         if (dataModal.active) setDataModal({ ...dataModal, wishlist: !dataModal.wishlist });
     };
+
+    const changeFeedbackAmount = (id, action = '+') => {
+        const newMenu = menu.map((obj) => {
+            if (obj.id === id) {
+                return { ...obj, feedbackAmount: action === '+' ? obj.feedbackAmount + 1 : obj.feedbackAmount - 1 };
+            }
+            return obj;
+        });
+        setMenu(newMenu);
+        // if (dataModal.active) setDataModal({ ...dataModal, amount: newMenu.find((item) => item.id === id).amount });
+    };
+
     return (
         <>
             <ModalAppearance dataModal={dataModal} showModalWindow={showModalWindow} changeWishlist={changeWishlist} changeAmount={changeAmount} />
@@ -43,6 +55,7 @@ function MenuList() {
                         key={item.id}
                         showModalWindow={showModalWindow}
                         changeWishlist={changeWishlist}
+                        changeFeedbackAmount={changeFeedbackAmount}
                     />
                 ))}
             </div>

@@ -1,6 +1,6 @@
 import { FaRegHeart } from 'react-icons/fa';
 import { FaHeart } from 'react-icons/fa';
-import ItemAmountButtons from '../Menu/ItemAmountButtons';
+import ItemAmountButtons from '../UI/ItemAmountButtons';
 import Modal from './Modal';
 import style from './ModalAppearance.module.css';
 import ItemPrice from '../UI/ItemPrice';

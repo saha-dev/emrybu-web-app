@@ -3,8 +3,9 @@ import style from './ItemPrice.module.css';
 function ItemPrice({ price }) {
     return (
         <>
-            <div className={style.itemPrice}>
-                {price}
+            <div className={style.priceWrapper}>
+                <span>Ціна: </span>
+                <span className={style.itemPrice}>{price}</span>
                 <span className={style.itemCurrency}> ₴</span>
             </div>
         </>

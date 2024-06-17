@@ -8,7 +8,7 @@ const menu = [
         imgUrl: 'https://emrybu.com.ua/image/cache/catalog/litnemenju/rol_sonjachnij%282%29-560x560.jpg',
         categoryId: 1,
         wishlist: false,
-        rating: 0,
+        feedbackAmount: 0,
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ const menu = [
         imgUrl: 'https://emrybu.com.ua/image/cache/catalog/litnemenju/setodnogorazuvlitku%283%29-560x560.jpg',
         categoryId: 2,
         wishlist: false,
-        rating: 0,
+        feedbackAmount: 0,
     },
     {
         id: 3,
@@ -31,7 +31,7 @@ const menu = [
         imgUrl: 'https://emrybu.com.ua/image/cache/catalog/litnemenju/rol_babl_gam%282%29-560x560.jpg',
         categoryId: 3,
         wishlist: false,
-        rating: 0,
+        feedbackAmount: 0,
     },
     {
         id: 4,
@@ -42,7 +42,7 @@ const menu = [
         imgUrl: 'https://emrybu.com.ua/image/cache/catalog/litnemenju/rollitnjafiladelfizkumkvatom%283%29-560x560.jpg',
         categoryId: 4,
         wishlist: false,
-        rating: 0,
+        feedbackAmount: 0,
     },
     {
         id: 5,
@@ -54,7 +54,7 @@ const menu = [
         imgUrl: 'https://emrybu.com.ua/image/cache/catalog/litnemenju/rolkvitkovijbezrisu%281%29-560x560.jpg',
         categoryId: 5,
         wishlist: false,
-        rating: 0,
+        feedbackAmount: 0,
     },
 ];
 

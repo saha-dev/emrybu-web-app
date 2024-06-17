@@ -3,7 +3,7 @@ import { TiPlus } from 'react-icons/ti';
 import { TiMinus } from 'react-icons/ti';
 
 import style from './ItemAmountButtons.module.css';
-import Button from '../UI/Button';
+import Button from './Button';
 
 function ItemAmountButtons({ amount, changeAmount, id }) {
     return (
