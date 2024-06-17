@@ -21,7 +21,7 @@
     display: block;
     width: 24px;
     height: 3px;
-    background: #000;
+    background: var(--tg-theme-text-color, darkgray);
 }
 
 .closeModal::before {
