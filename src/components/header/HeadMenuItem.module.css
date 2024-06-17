@@ -12,5 +12,5 @@
 }
 
 .headMenuItem.active {
-    border: 2px solid darkgray;
+    background-color: var(--main-active-color);
 }
