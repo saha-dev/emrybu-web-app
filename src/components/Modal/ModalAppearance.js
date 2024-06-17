@@ -1,11 +1,11 @@
 import { FaRegHeart } from 'react-icons/fa';
 import { FaHeart } from 'react-icons/fa';
-
+import ItemAmountButtons from '../Menu/ItemAmountButtons';
 import Modal from './Modal';
 import style from './ModalAppearance.module.css';
-import ItemPrice from '../Menu/ItemPrice';
+import ItemPrice from '../UI/ItemPrice';
 
-function ModalAppearance({ dataModal, showModalWindow, changeWishlist }) {
+function ModalAppearance({ dataModal, showModalWindow, changeWishlist, changeAmount }) {
     return (
         <Modal active={dataModal.active} showModalWindow={showModalWindow}>
             <div className={style.closeModal} onClick={() => showModalWindow()}></div>
@@ -17,6 +17,7 @@ function ModalAppearance({ dataModal, showModalWindow, changeWishlist }) {
                 </button>
             </div>
             <ItemPrice price={dataModal.price} />
+            <ItemAmountButtons amount={dataModal.amount} changeAmount={changeAmount} id={dataModal.id} />
             <div className={style.description}>
                 <p>{dataModal.composition}</p>
                 <p>{dataModal.description}</p>

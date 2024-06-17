@@ -17,6 +17,7 @@ function MenuList() {
             return obj;
         });
         setMenu(newMenu);
+        if (dataModal.active) setDataModal({ ...dataModal, amount: newMenu.find((item) => item.id === id).amount });
     };
 
     const showModalWindow = (item) => {
@@ -33,7 +34,7 @@ function MenuList() {
     };
     return (
         <>
-            <ModalAppearance dataModal={dataModal} showModalWindow={showModalWindow} changeWishlist={changeWishlist} />
+            <ModalAppearance dataModal={dataModal} showModalWindow={showModalWindow} changeWishlist={changeWishlist} changeAmount={changeAmount} />
             <div className={style.menuList}>
                 {menu.map((item) => (
                     <MenuItem
