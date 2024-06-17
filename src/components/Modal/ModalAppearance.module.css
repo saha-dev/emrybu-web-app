@@ -56,6 +56,10 @@
     cursor: pointer;
 }
 
+.textWrapper {
+    margin: 0 10px;
+}
+
 .description {
     text-align: left;
 }

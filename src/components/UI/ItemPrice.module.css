@@ -1,9 +1,16 @@
 .priceWrapper {
     margin: 5px 0;
     text-align: left;
+    display: flex;
+    align-items: baseline;
 }
 
-.itemPrice {
+.priceWrapper span {
+    margin-right: 10px;
+}
+
+.itemPrice,
+.sum {
     font-weight: bold;
     font-size: 1.5rem;
 }
@@ -11,4 +18,8 @@
 .itemCurrency {
     font-weight: normal;
     font-size: 1.1rem;
+}
+
+.sum {
+    margin-left: auto;
 }

@@ -36,7 +36,7 @@ function MenuList() {
     const changeFeedbackAmount = (id, action = '+') => {
         const newMenu = menu.map((obj) => {
             if (obj.id === id) {
-                return { ...obj, feedbackAmount: action === '+' ? obj.feedbackAmount + 1 : obj.feedbackAmount - 1 };
+                return { ...obj, feedbackAmount: action === '+' ? obj.feedbackAmount + 1 : obj.feedbackAmount !== 0 ? obj.feedbackAmount - 1 : 0 };
             }
             return obj;
         });

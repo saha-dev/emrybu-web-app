@@ -16,11 +16,13 @@ function ModalAppearance({ dataModal, showModalWindow, changeWishlist, changeAmo
                     {dataModal.wishlist ? <FaHeart /> : <FaRegHeart />}
                 </button>
             </div>
-            <ItemPrice price={dataModal.price} />
-            <ItemAmountButtons amount={dataModal.amount} changeAmount={changeAmount} id={dataModal.id} />
-            <div className={style.description}>
-                <p>{dataModal.composition}</p>
-                <p>{dataModal.description}</p>
+            <div className={style.textWrapper}>
+                <ItemPrice price={dataModal.price} sum={dataModal.price * dataModal.amount} />
+                <ItemAmountButtons amount={dataModal.amount} changeAmount={changeAmount} id={dataModal.id} />
+                <div className={style.description}>
+                    <p>{dataModal.composition}</p>
+                    <p>{dataModal.description}</p>
+                </div>
             </div>
         </Modal>
     );
