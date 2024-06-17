@@ -1,4 +1,3 @@
-import { IoBagAddOutline } from 'react-icons/io5';
 import { TbShoppingBagPlus } from 'react-icons/tb';
 import { TiPlus } from 'react-icons/ti';
 import { TiMinus } from 'react-icons/ti';
