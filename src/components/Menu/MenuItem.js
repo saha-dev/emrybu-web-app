@@ -1,4 +1,5 @@
 import { IoBagAddOutline } from 'react-icons/io5';
+import { TbShoppingBagPlus } from 'react-icons/tb';
 import { TiPlus } from 'react-icons/ti';
 import { TiMinus } from 'react-icons/ti';
 import { FaRegHeart } from 'react-icons/fa';
@@ -29,7 +30,7 @@ function MenuItem({ item, changeAmount, showModalWindow, changeWishlist }) {
                 <div className={style.itemButtons}>
                     {!amount ? (
                         <Button btnclass="itemButtonBuy" onClick={changeAmount} id={id}>
-                            <IoBagAddOutline className={style.iconBag} />
+                            <TbShoppingBagPlus className={style.iconBag} />
                             Беру!
                         </Button>
                     ) : (
