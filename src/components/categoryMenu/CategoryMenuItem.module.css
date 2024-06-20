@@ -1,9 +1,8 @@
 .headMenuItem {
     cursor: pointer;
     background-color: var(--main-color);
-    text-decoration: none;
     margin-right: 8px;
-    padding: 8px 16px;
+    padding: 5px 15px;
     border-radius: 10px;
     flex-shrink: 0;
     font-size: 1.2rem;
@@ -13,5 +12,4 @@
 
 .headMenuItem.active {
     background-color: var(--main-active-color);
-    /* border: 2px solid green; */
 }

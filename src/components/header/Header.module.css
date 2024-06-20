@@ -16,19 +16,10 @@
     margin-bottom: 20px;
 }
 
-.buttons {
+.buttonsIcon {
     color: var(--main-color);
     font-size: 2.2rem;
     cursor: pointer;
-    margin-right: 10px;
-}
-
-.buttons:last-of-type {
-    margin-right: 0px;
-}
-
-.buttons:hover {
-    filter: contrast(50%);
 }
 
 .logo {
