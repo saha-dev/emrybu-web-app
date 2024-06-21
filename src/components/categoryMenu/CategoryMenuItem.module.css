@@ -1,5 +1,4 @@
 .headMenuItem {
-    cursor: pointer;
     background-color: var(--main-color);
     margin-right: 8px;
     padding: 5px 15px;
@@ -7,9 +6,14 @@
     flex-shrink: 0;
     font-size: 1.2rem;
     color: var(--tg-theme-bg-color, white);
-    border: none;
+    text-decoration: none;
 }
 
 .headMenuItem.active {
     background-color: var(--main-active-color);
+}
+
+.headMenuItem a {
+    color: var(--tg-theme-text-color, white);
+    text-decoration: none;
 }

@@ -1,11 +1,12 @@
+import { NavLink } from 'react-router-dom';
 import style from './CategoryMenuItem.module.css';
 
-function HeadMenuItem({ item, handlerMenuButtonClick }) {
+function CategoryMenuItem({ item, handlerMenuButtonClick }) {
     return (
-        <button className={style.headMenuItem + (item.active === true ? ' ' + style.active : '')} onClick={() => handlerMenuButtonClick(item.id)}>
+        <NavLink to={`menu/${item.slug}`} className={({ isActive }) => style.headMenuItem + (isActive ? ' ' + style.active : '')}>
             {item.description}
-        </button>
+        </NavLink>
     );
 }
 
-export default HeadMenuItem;
+export default CategoryMenuItem;

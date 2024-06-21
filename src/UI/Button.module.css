@@ -1,0 +1,45 @@
+.headerButton {
+    border: none;
+    background-color: unset;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.headerButton:last-of-type {
+    margin-right: 0px;
+}
+
+.headerButton:hover {
+    filter: contrast(50%);
+}
+
+.itemButtonBuy,
+.itemMinus,
+.itemPlus {
+    border: none;
+    color: var(--tg-theme-bg-color, white);
+    background-color: var(--main-color);
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.itemButtonBuy {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemButtonBuy:hover {
+    filter: brightness(95%);
+}
+
+.itemButtonsPlusMinus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
