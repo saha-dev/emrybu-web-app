@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { RiSearchLine } from 'react-icons/ri';
 import { TbShoppingBag } from 'react-icons/tb';
-import Button from '../UI/Button';
+import Button from '../../UI/Button';
 
 import CategoryMenu from '../categoryMenu/CategoryMenu';
 
