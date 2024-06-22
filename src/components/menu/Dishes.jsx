@@ -1,6 +1,6 @@
 import { useContext } from 'react';
-// import { FaRegHeart, FaHeart } from 'react-icons/fa';
-import { BsFillBookmarkHeartFill, BsBookmarkHeart } from 'react-icons/bs';
+import { FaRegHeart, FaHeart } from 'react-icons/fa';
+// import { BsFillBookmarkHeartFill, BsBookmarkHeart } from 'react-icons/bs';
 
 import ItemContext from '../../context/ItemContext';
 import ItemAmountButtons from '../../UI/ItemAmountButtons';
@@ -23,7 +23,8 @@ function Dishes() {
                 <div className={style.imageWrapper}>
                     <img src={item.imgUrl} alt="" className={style.itemImage} /> {/*onClick={() => showModalWindow({ ...item })} /> */}
                     <button className={style.buttonFavoritelist} onClick={() => setIsFavorite(item.id)}>
-                        {item.isFavorite ? <BsFillBookmarkHeartFill /> : <BsBookmarkHeart />}
+                        {/* {item.isFavorite ? <BsFillBookmarkHeartFill /> : <BsBookmarkHeart />} */}
+                        {item.isFavorite ? <FaRegHeart /> : <FaHeart />}
                     </button>
                 </div>
                 <div className={style.itemButtons}>
