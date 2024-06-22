@@ -1,6 +1,3 @@
-// import Header from '../header/Header';
-// import style from './Home.module.css';
-
 function Home() {
     return (
         <>
