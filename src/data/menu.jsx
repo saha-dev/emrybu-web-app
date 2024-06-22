@@ -7,8 +7,8 @@ const menu = [
         composition: 'Склад: рис, норі, філе тунця, креветки тигрові, філе лосося, авокадо, ікра лососева, квіти їстівні, золото харчове.',
         imgUrl: 'https://emrybu.com.ua/image/cache/catalog/litnemenju/rol_sonjachnij%282%29-560x560.jpg',
         categoryId: 1,
-        wishlist: false,
-        feedbackAmount: 0,
+        isFavorite: false,
+        feedback: 0,
     },
     {
         id: 11,
@@ -18,8 +18,8 @@ const menu = [
         composition: 'Склад: рис, норі, філе тунця, креветки тигрові, філе лосося, авокадо, ікра лососева, квіти їстівні, золото харчове.',
         imgUrl: 'https://emrybu.com.ua/image/cache/catalog/litnemenju/rol_sonjachnij%282%29-560x560.jpg',
         categoryId: 1,
-        wishlist: false,
-        feedbackAmount: 0,
+        isFavorite: false,
+        feedback: 0,
     },
     {
         id: 2,
@@ -30,8 +30,8 @@ const menu = [
             'Склад: Рол Літня Філадельфія з кумкватом - 1 рол (8 шматочків), Рол Літній Дракон  - 1 рол (8 шматочків), Рол Тропічний острів - 1 рол (8 шматочків);',
         imgUrl: 'https://emrybu.com.ua/image/cache/catalog/litnemenju/setodnogorazuvlitku%283%29-560x560.jpg',
         categoryId: 2,
-        wishlist: false,
-        feedbackAmount: 0,
+        isFavorite: false,
+        feedback: 0,
     },
     {
         id: 3,
@@ -41,8 +41,8 @@ const menu = [
         composition: 'Склад: рис, норі, крем-сир, креветки тигровіі, манго, персик, ікра тобіко, рисові кульки.',
         imgUrl: 'https://emrybu.com.ua/image/cache/catalog/litnemenju/rol_babl_gam%282%29-560x560.jpg',
         categoryId: 3,
-        wishlist: false,
-        feedbackAmount: 0,
+        isFavorite: false,
+        feedback: 0,
     },
     {
         id: 4,
@@ -52,8 +52,8 @@ const menu = [
         composition: 'Склад: рис, норі, філе лосося, крем-сир, сурімі, манго, апельсин, тобико, кумкват, квіти їстівні.',
         imgUrl: 'https://emrybu.com.ua/image/cache/catalog/litnemenju/rollitnjafiladelfizkumkvatom%283%29-560x560.jpg',
         categoryId: 4,
-        wishlist: false,
-        feedbackAmount: 0,
+        isFavorite: false,
+        feedback: 0,
     },
     {
         id: 5,
@@ -64,8 +64,8 @@ const menu = [
             'Склад: Рол Повний тунець - 1 рол (8 шматочків), Рол Бабл Гам  - 1 рол (8 шматочків), Рол Квітковий без рису - 1 рол (8 шматочків);',
         imgUrl: 'https://emrybu.com.ua/image/cache/catalog/litnemenju/rolkvitkovijbezrisu%281%29-560x560.jpg',
         categoryId: 5,
-        wishlist: false,
-        feedbackAmount: 0,
+        isFavorite: false,
+        feedback: 0,
     },
 ];
 
