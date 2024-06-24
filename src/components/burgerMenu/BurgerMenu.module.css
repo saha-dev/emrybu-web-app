@@ -1,0 +1,76 @@
+.menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateX(-200%);
+    transition: all 0.3s;
+}
+
+.menu.active {
+    transform: translateX(0);
+}
+
+.blur {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 100;
+}
+
+.menuContent {
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    padding-top: 20px;
+    position: relative;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+    transition: all 0.4s;
+}
+
+.closeMenu {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    /* opacity: 0.2; */
+    cursor: pointer;
+}
+
+.closeMenu::before,
+.closeMenu::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: var(--main-color);
+}
+
+.closeMenu::before {
+    transform: rotate(45deg);
+}
+
+.closeMenu::after {
+    transform: rotate(-45deg);
+}
+
+.navList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 20px;
+}
+
+.navItem {
+    color: var(--tg-theme-text-color, black);
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}

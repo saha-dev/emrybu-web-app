@@ -7,12 +7,19 @@ import Button from '../../UI/Button';
 import CategoryMenu from '../categoryMenu/CategoryMenu';
 
 import style from './Header.module.css';
+import { useState } from 'react';
+import BurgerMenu from '../burgerMenu/BurgerMenu';
 
 function Header() {
+    const [bMenu, setBMenu] = useState(false);
+    const showBMenu = () => {
+        setBMenu(!bMenu);
+    };
     return (
         <div className={style.header}>
+            <BurgerMenu showBMenu={showBMenu} active={bMenu} />
             <div className={style.headerLogo}>
-                <Button btnclass="headerButton">
+                <Button btnclass="headerButton" onClick={() => showBMenu()}>
                     <GiHamburgerMenu className={style.buttonsIcon} />
                 </Button>
                 <NavLink to="." className={() => style.logoLink}>
