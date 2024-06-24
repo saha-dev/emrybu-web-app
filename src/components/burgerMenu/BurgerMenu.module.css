@@ -23,7 +23,7 @@
 .menuContent {
     width: 300px;
     height: 100vh;
-    background-color: white;
+    background-color: var(--tg-theme-bg-color, white);
     padding-top: 20px;
     position: relative;
     border-top-right-radius: 16px;
