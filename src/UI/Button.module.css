@@ -11,7 +11,7 @@
 }
 
 .headerButton:hover {
-    filter: contrast(50%);
+    /* filter: contrast(50%); */
 }
 
 .itemButtonBuy,
