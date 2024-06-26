@@ -1,0 +1,11 @@
+.content {
+    margin: 0 20px;
+    /* text-align: left; */
+}
+.content strong {
+    margin: 0 10px;
+}
+
+.content a {
+    text-decoration: none;
+}

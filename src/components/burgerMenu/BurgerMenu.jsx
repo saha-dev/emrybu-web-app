@@ -10,13 +10,19 @@ function BurgerMenu({ showBMenu, active }) {
                     <div className={style.closeMenu} onClick={() => showBMenu()}></div>
                     <nav className={style.navList}>
                         <NavLink to="." className={() => style.navItem} onClick={() => showBMenu()}>
+                            Прийом та доставка замовлень
+                        </NavLink>
+                        <NavLink to="." className={() => style.navItem} onClick={() => showBMenu()}>
                             Кошик
                         </NavLink>
                         <NavLink to="." className={() => style.navItem} onClick={() => showBMenu()}>
                             Мої улюблені страви
                         </NavLink>
                         <NavLink to="." className={() => style.navItem} onClick={() => showBMenu()}>
-                            Написати відгук
+                            Мої замовлення
+                        </NavLink>
+                        <NavLink to="." className={() => style.navItem} onClick={() => showBMenu()}>
+                            Інформація для доставки
                         </NavLink>
                     </nav>
                 </div>
