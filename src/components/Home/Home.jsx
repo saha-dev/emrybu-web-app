@@ -23,9 +23,12 @@ function Home() {
                     {/* <a href="tel:+380634441188">
                         <strong>063-444-11-88</strong>
                     </a> */}
-                    <a href="tel:+380504441188">
+                    <div onclick={window.open('tel:+71237777777')} style={{ cursor: 'pointer' }}>
+                        050-444-11-88
+                    </div>
+                    {/* <a href="tel:+380504441188">
                         <strong>050-444-11-88</strong>
-                    </a>
+                    </a> */}
                 </p>
                 <p>
                     <FaViber style={{ marginRight: '5px', color: '#7b519b' }} />
