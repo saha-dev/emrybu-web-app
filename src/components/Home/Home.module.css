@@ -6,10 +6,10 @@
     color: var(--tg-theme-text-color, black);
 }
 
-.content a {
-    text-decoration: none;
-}
-
 .phone {
     font-size: 1.2rem;
+}
+
+.messagers {
+    margin-top: 10px;
 }

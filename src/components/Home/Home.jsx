@@ -17,30 +17,20 @@ function Home() {
             <h4>Прийом замовлень 10:00 - 21:00</h4>
             <h4>Доставка замовлень 11:30 - 23:00</h4>
             <div className={style.phone}>
-                <p>
-                    <FiPhone />
-                    <button onClick={() => window.open('tel:+380634441188')}>063-444-11-88</button>
-                    <button onClick={'https://telegram.me/share/url?url=tel:+1234567&text=123456'}>063-444-11-88</button>
-                    <button onClick={() => (window.location = 'tg://msg?text=tel:+12345678')}>+12345678</button>
-                    <div onClick="window.open('tel:+71237777777');">+7 (123) 777-77-77</div>
-                    <div onClick={() => window.open('tel:+71237777777')}>+7 (123) 777-77-77</div>
-                    {/* <a href="tel:+380634441188">
-                        <strong>063-444-11-88</strong>
-                    </a> */}
-                    <div onclick={window.open('tel:+71237777777')} style={{ cursor: 'pointer' }}>
-                        050-444-11-88
-                    </div>
-                    {/* <a href="tel:+380504441188">
-                        <strong>050-444-11-88</strong>
-                    </a> */}
-                </p>
-                <p>
+                <FiPhone />
+                <span className={style.linkNumber} onClick={() => window.open('tel:+380634441188')}>
+                    <strong>063-444-11-88</strong>
+                </span>
+                <span className={style.linkNumber} onClick={window.open('tel:+380504441188')}>
+                    <strong>050-444-11-88</strong>
+                </span>
+                <div className={style.messagers}>
                     <FaViber style={{ marginRight: '5px', color: '#7b519b' }} />
                     <FaTelegram style={{ color: '#22a9e8' }} />
-                    <a href="tel:+380636780264">
+                    <span className={style.linkNumber} onClick={window.open('tel:+380636780264')}>
                         <strong>063-678-02-64</strong>
-                    </a>
-                </p>
+                    </span>
+                </div>
             </div>
         </div>
     );
