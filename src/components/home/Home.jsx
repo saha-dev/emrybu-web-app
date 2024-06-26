@@ -19,17 +19,18 @@ function Home() {
             <div className={style.phone}>
                 <p>
                     <FiPhone />
-                    <a href="tel:+380634441188">
+                    <button onClick={window.open('tel:+380634441188')}>063-444-11-88</button>
+                    {/* <a href="tel:+380634441188">
                         <strong>063-444-11-88</strong>
-                    </a>
-                    <a href="+380504441188">
+                    </a> */}
+                    <a href="tel:+380504441188">
                         <strong>050-444-11-88</strong>
                     </a>
                 </p>
                 <p>
                     <FaViber style={{ marginRight: '5px', color: '#7b519b' }} />
                     <FaTelegram style={{ color: '#22a9e8' }} />
-                    <a href="+380636780264">
+                    <a href="tel:+380636780264">
                         <strong>063-678-02-64</strong>
                     </a>
                 </p>
