@@ -20,6 +20,7 @@ function Home() {
                 <p>
                     <FiPhone />
                     <button onClick={window.open('tel:+380634441188')}>063-444-11-88</button>
+                    <button onClick={'https://telegram.me/share/url?url=tel:+1234567&text=123456'}>063-444-11-88</button>
                     {/* <a href="tel:+380634441188">
                         <strong>063-444-11-88</strong>
                     </a> */}
