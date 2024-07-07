@@ -13,7 +13,7 @@ function DishModal({ changeState, state }) {
         <Modal showModalWindow={changeState}>
             <div className={style.closeModal} onClick={() => changeState()}></div>
             <h3 className={style.title}>{title}</h3>
-            <Photo changeState={changeState} state={state} />
+            <Photo changeState={changeState} state={state} modal={true} />
             <div className={style.textWrapper}>
                 <ItemPrice price={price} sum={price * amount} />
                 <ItemAmountButtons amount={amount} changeAmount={changeAmount} id={id} />

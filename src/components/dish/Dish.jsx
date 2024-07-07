@@ -3,7 +3,7 @@ import { useContext, useState } from 'react';
 import ItemContext from '../../context/ItemContext';
 import ItemAmountButtons from '../../UI/ItemAmountButtons';
 import ItemPrice from '../../UI/ItemPrice';
-import Feedback from '../../UI/Feedback';
+// import Feedback from '../../UI/Feedback';
 
 import style from './Dish.module.css';
 import DishModal from './DishModal';
@@ -24,10 +24,10 @@ function Dish() {
                     <h3 className={style.itemTitle}>{title}</h3>
                     <ItemPrice price={price} />
                     <p className={style.itemDescription}>{description}</p>
-                    <Feedback />
+                    {/* <Feedback /> */}
                 </div>
                 <div className={style.itemAppearance}>
-                    <Photo changeState={changeState} state={state} />
+                    <Photo changeState={changeState} state={state} modal={false} />
                     <ItemAmountButtons />
                 </div>
             </div>
