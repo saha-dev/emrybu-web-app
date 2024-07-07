@@ -1,3 +1,7 @@
 .itemsList {
     margin: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }

@@ -72,6 +72,13 @@
     font-size: 1.2rem;
 }
 
+.navItem:hover {
+    font-weight: bold;
+    .icon {
+        color: var(--main-active-color);
+    }
+}
+
 .navContent {
     display: flex;
     align-items: end;

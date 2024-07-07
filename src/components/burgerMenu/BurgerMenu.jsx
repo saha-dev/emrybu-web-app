@@ -13,9 +13,6 @@ function BurgerMenu({ showBMenu, active }) {
                 <div className={style.menuContent} onClick={(e) => e.stopPropagation()}>
                     <div className={style.closeMenu} onClick={() => showBMenu()}></div>
                     <nav className={style.navList}>
-                        {/* <NavLink to="." className={() => style.navItem} onClick={() => showBMenu()}>
-                            Оформлення та доставка
-                        </NavLink> */}
                         <NavLink to="." className={() => style.navItem} onClick={() => showBMenu()}>
                             <div className={style.navContent}>
                                 <TbShoppingBag className={style.icon} />
