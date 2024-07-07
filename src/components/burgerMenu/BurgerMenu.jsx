@@ -1,4 +1,8 @@
 import { NavLink } from 'react-router-dom';
+import { RxInfoCircled } from 'react-icons/rx';
+import { TbShoppingBag } from 'react-icons/tb';
+import { FaRegHeart, FaHeart } from 'react-icons/fa';
+import { MdOutlinePlaylistAddCheck } from 'react-icons/md';
 import style from './BurgerMenu.module.css';
 
 //+ active ? ' ' + style.active : ''
@@ -9,20 +13,31 @@ function BurgerMenu({ showBMenu, active }) {
                 <div className={style.menuContent} onClick={(e) => e.stopPropagation()}>
                     <div className={style.closeMenu} onClick={() => showBMenu()}></div>
                     <nav className={style.navList}>
+                        {/* <NavLink to="." className={() => style.navItem} onClick={() => showBMenu()}>
+                            Оформлення та доставка
+                        </NavLink> */}
                         <NavLink to="." className={() => style.navItem} onClick={() => showBMenu()}>
-                            Прийом та доставка замовлень
+                            <div className={style.navContent}>
+                                <TbShoppingBag className={style.icon} />
+                                Кошик
+                            </div>
                         </NavLink>
                         <NavLink to="." className={() => style.navItem} onClick={() => showBMenu()}>
-                            Кошик
+                            <div className={style.navContent}>
+                                <FaRegHeart className={style.icon} /> Мої улюблені страви
+                            </div>
                         </NavLink>
                         <NavLink to="." className={() => style.navItem} onClick={() => showBMenu()}>
-                            Мої улюблені страви
+                            <div className={style.navContent}>
+                                <MdOutlinePlaylistAddCheck className={style.icon} />
+                                Мої замовлення
+                            </div>
                         </NavLink>
                         <NavLink to="." className={() => style.navItem} onClick={() => showBMenu()}>
-                            Мої замовлення
-                        </NavLink>
-                        <NavLink to="." className={() => style.navItem} onClick={() => showBMenu()}>
-                            Інформація для доставки
+                            <div className={style.navContent}>
+                                <RxInfoCircled className={style.icon} />
+                                Інформація для доставки
+                            </div>
                         </NavLink>
                     </nav>
                 </div>

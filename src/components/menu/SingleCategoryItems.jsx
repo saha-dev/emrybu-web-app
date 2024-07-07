@@ -3,12 +3,12 @@ import { Outlet, useParams } from 'react-router-dom';
 import ItemContext from '../../context/ItemContext';
 import { fetchDataMenuTemplate } from '../../data/fetchData';
 import NotFound from '../notFound/NotFound';
-import style from './SingleMenuItems.module.css';
+import style from './SingleCategoryItems.module.css';
 import Dish from '../dish/Dish';
 
 const dataDishes = fetchDataMenuTemplate();
 
-function SingleMenuItems() {
+function SingleCategoryItems() {
     const { slug } = useParams();
     const [dishes, setDishes] = useState([]);
     useEffect(() => {
@@ -52,4 +52,4 @@ function SingleMenuItems() {
     );
 }
 
-export default SingleMenuItems;
+export default SingleCategoryItems;
