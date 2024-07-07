@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { RxInfoCircled } from 'react-icons/rx';
 import { TbShoppingBag } from 'react-icons/tb';
-import { FaRegHeart, FaHeart } from 'react-icons/fa';
+import { FaRegHeart } from 'react-icons/fa';
 import { MdOutlinePlaylistAddCheck } from 'react-icons/md';
 import style from './BurgerMenu.module.css';
 
